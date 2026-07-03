@@ -1,14 +1,11 @@
-// Write an arrow function to check whether a number is Odd or Even.
-// Return "Even" if the number is even.
-// Return "Odd" if the number is odd.
-
-// Example:
-// checkOddEven(8) ? "Even"
-// checkOddEven(5) ? "Odd"
-
 const checkOddEven = (num) => {
-    // Write your code here
-
+    if (num % 2 === 0) {
+        console.log(num + " is Even");
+    } else {
+        console.log(num + " is Odd");
+    }
 };
 
-module.exports = checkOddEven;
+// Example
+checkOddEven(7);
+checkOddEven(10);
